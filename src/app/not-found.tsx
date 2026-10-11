@@ -1,23 +1,40 @@
-'use client';
-
 import Link from 'next/link';
-import { Home } from 'lucide-react';
+import { wedding } from '@/lib/wedding-config';
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-cream to-white px-4">
-      <div className="text-center">
-        <div className="text-8xl font-serif text-gold mb-4">404</div>
-        <h1 className="text-2xl font-semibold text-charcoal mb-2">Page Not Found</h1>
-        <p className="text-gray-500 mb-8">The page you are looking for does not exist.</p>
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 bg-gold text-white px-6 py-3 rounded-full hover:bg-gold-dark transition-colors"
-        >
-          <Home className="w-4 h-4" />
-          Back to Home
-        </Link>
-      </div>
-    </div>
+    <main
+      className="flex min-h-screen flex-col items-center justify-center px-6 text-center"
+      style={{ backgroundColor: wedding.colors.bg }}
+    >
+      <p
+        className="font-script text-5xl"
+        style={{ color: wedding.colors.accent }}
+      >
+        Oops
+      </p>
+      <h1
+        className="mt-4 font-serif text-3xl tracking-wide"
+        style={{ color: wedding.colors.dark }}
+      >
+        Page Not Found
+      </h1>
+      <p
+        className="mt-3 max-w-sm text-sm leading-relaxed"
+        style={{ color: wedding.colors.text, opacity: 0.7 }}
+      >
+        The page you are looking for has moved or does not exist.
+      </p>
+      <Link
+        href="/"
+        className="mt-10 rounded-full px-10 py-3.5 text-xs font-medium uppercase tracking-[0.25em] transition-opacity hover:opacity-90"
+        style={{
+          backgroundColor: wedding.colors.primary,
+          color: wedding.colors.bg,
+        }}
+      >
+        Return home
+      </Link>
+    </main>
   );
 }

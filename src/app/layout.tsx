@@ -3,12 +3,11 @@ import Providers from '@/components/Providers';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'WeddingInv - Digital Wedding Invitation Platform',
-  description: 'Create beautiful digital wedding invitations that your guests will remember. Elegant templates, RSVP management, photo galleries, and more.',
-  keywords: ['wedding', 'invitation', 'digital', 'RSVP', 'e-invite', 'wedding invitation', 'online invitation'],
+  title: 'Christian & Joya | Wedding Invitation',
+  description: 'You are warmly invited to celebrate the wedding of Christian & Joya.',
   openGraph: {
-    title: 'WeddingInv - Digital Wedding Invitation Platform',
-    description: 'Create beautiful digital wedding invitations that your guests will remember.',
+    title: 'Christian & Joya | Wedding Invitation',
+    description: 'You are warmly invited to celebrate the wedding of Christian & Joya.',
     type: 'website',
   },
 };
